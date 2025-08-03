@@ -1,0 +1,259 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ccdbe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.app-container {
+  margin: auto;
+  padding-bottom: 60px;
+  background-color: #fafbfd;
+  border-radius: 10px;
+  padding: 0 0 20px 0;
+  max-width: 550px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+  width: 90%;
+  height: 0.2px;
+  background-color: #d1d5db;
+  border: none;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  transform: translateY(-10px);
+  font-weight: 400;
+  color: #444;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px;
+  flex: 1;
+  gap: 20px;
+  margin-top: px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:focus-visible {
+  outline: none;
+}
+
+.timer-logics {
+  position: relative;
+  border-radius: 50%;
+  background-color: #feffff;
+  border: 10px solid #5b8cd0;
+  height: 200px;
+  width: 200px;
+}
+
+#time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  user-select: none;
+}
+
+.timer-buttons {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.timer-buttons button {
+  background-color: white;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  width: 65px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timer-buttons button:hover {
+  background-color: #5b8cd0;
+  color: white;
+}
+
+.timer-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: flex-start;
+  transform: translateX(18px);
+}
+
+.timer-settingInt,
+.timer-settingPause {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.minInt,
+.minPauza {
+  min-width: 25px;
+  text-align: left;
+}
+
+.PauzaInput {
+  margin-left: 10px;
+}
+
+.IntInput,
+.PauzaInput {
+  width: 50px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.task-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 25px;
+  min-width: 220px;
+  max-width: 300px;
+}
+
+.task-input,
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.task-input h3,
+.task-list h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Input2,
+.TextInput {
+  width: 160px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.pridat {
+  height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #5b8cd0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 160px;
+  transition: background-color 0.3s ease;
+}
+
+.pridat:hover {
+  background-color: #4775b7;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+}
+
+/* MEDIA – MOBILNÉ ZARIADENIA */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  #time {
+    font-size: 32px;
+  }
+
+  .timer-logics {
+    height: 160px;
+    width: 160px;
+    border-width: 8px;
+  }
+}
