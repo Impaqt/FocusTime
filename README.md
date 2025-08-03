@@ -39,8 +39,8 @@ Druhý projekt vytvorený počas učenia JavaScriptu a responzívneho webdizajnu
 
 ## 🖼️ Náhľad
 
-![FocusTime Screenshot](screenshot.png)  
-*️⃣ Nahraj obrázok do repozitára, súbor nazvi `screenshot.png`
+<img width="1034" height="869" alt="image" src="https://github.com/user-attachments/assets/6a3387e4-428c-4059-88e3-f8728e985e51" />
+
 
 ---
 
