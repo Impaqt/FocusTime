@@ -39,9 +39,6 @@ Druhý projekt vytvorený počas učenia JavaScriptu a responzívneho webdizajnu
 
 ## 🖼️ Náhľad
 
-[FocusTime.webm](https://github.com/user-attachments/assets/27357a5b-c743-4caf-9732-09d8c20dd789)
-
-
 <img width="928" height="877" alt="Screenshot 2025-08-07 204718" src="https://github.com/user-attachments/assets/be40397e-5ddf-444e-8b7a-9bc3c8d5bb90" />
 
 
